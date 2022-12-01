@@ -6,6 +6,19 @@
 
 using namespace std;
 
+int max(int index, vector<int>& elves){
+    int winner = 0;
+    int win_index = 0;
+    for(int i = 0; i < index; ++i){
+        if(i != index && elves[i] > winner){
+            winner = elves[i];
+            win_index = i;
+        }
+    }
+    elves[win_index] = 0;  
+    return winner;  
+}
+
 int main(){
     ifstream file; 
     file.open("advent1.txt");
@@ -23,35 +36,9 @@ int main(){
             index++;
         }
     }
-    int winner1 = elves[0];
-    int win1_index = 0;
-    for(int i = 0; i < index; ++i){
-        if(i != index && elves[i + 1] > winner1){
-            winner1 = elves[i + 1];
-            win1_index = i + 1;
-        }
-        
-    }
-    elves[win1_index] = 0;
-    int winner2 = elves[0];
-    int win2_index = 0;
-    for(int i = 0; i < index; ++i){
-        if(i != index && elves[i + 1] > winner2){
-            winner2 = elves[i + 1];
-            win2_index = i + 1;
-        }
-        
-    }
-    elves[win2_index] = 0;
-    int winner3 = elves[0];
-    int win3_index = 0;
-    for(int i = 0; i < index; ++i){
-        if(i != index && elves[i + 1] > winner3){
-            winner3 = elves[i + 1];
-            win3_index = i + 1;
-        }
-        
-    }
+    int winner1 = max(index, elves); 
+    int winner2 = max(index, elves);
+    int winner3 = max(index, elves);
 
     cout << "w1: "  << winner1 << endl;
     cout << "w2: " << winner2 << endl;
