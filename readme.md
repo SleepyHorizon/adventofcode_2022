@@ -5,9 +5,9 @@
 ## Supported Features
 
 1. Add student information to a database
-  - Easily add student information: Names, Emails, Student IDs, GPAs, and Location.
-  - Saved to a database for later retrieval and viewing.
-  - Intuitive form prompts. 
+    - Easily add student information: Names, Emails, Student IDs, GPAs, and Location.
+    - Saved to a database for later retrieval and viewing.
+    - Intuitive form prompts. 
 
 ![image](https://github.com/SleepyHorizon/adventofcode_2022/assets/110139182/6672e311-4be6-43cf-9a41-82983e9d8e43)
 
