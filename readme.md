@@ -4,7 +4,7 @@
 
 ## Supported Features
 
-### 1. Add student information to a database
+1. Add student information to a database
   - Easily add student information: Names, Emails, Student IDs, GPAs, and Location.
   - Saved to a database for later retrieval and viewing.
   - Intuitive form prompts. 
